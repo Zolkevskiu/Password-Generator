@@ -42,3 +42,8 @@ function generation() {
 
     resultInput.value = numberGen("", lenghtValue);
 }
+eventTarget = document.querySelector('#" + CommentInpt.Id + "');
+
+eventTarget.addEventListener('keydown', event => {
+    event.preventDefault();
+});
