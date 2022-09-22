@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/style.css">
+    <link rel="shortcut icon" href="source/dogi.png" type="image/x-icon">
+    <title>Password-Generator</title>
+</head>
+<body>
+    <div class="generate-block">
+        <h1 class="generate-title">Generate Password</h1>
+        <input type="text" id="div2" class="generate-result" value="result">
+        <h3 class="generate-lenghts_title">lenghts <b id="lenght-result" style="color:#fff;">16</b></h3>
+        <div class="generate-lenghts_block">
+            <input type="range" class="lenghts-input" max="32" min="4">
+        </div>
+        <h3 class="generate-settings">settings</h3>
+        <div class="generate-settings_block settings_uppercase">
+            <p>Include Uppercase</p>
+            <label class="switch switch-block">
+                <input type="checkbox" checked id="uppercase">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="generate-settings_block settings_lowercase">
+            <p>Include Lowercase</p>
+            <label class="switch switch-block">
+                <input type="checkbox" checked id="lowercase">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="generate-settings_block settings_numbers">
+            <p>Include Numbers</p>
+            <label class="switch switch-block">
+                <input type="checkbox" id="number">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <button class="generate-button" onclick="generation()">GENERATE PASSWORD</button>
+    </div>
+    <script src="source/js/script.js"></script>
+</body>
+</html>
