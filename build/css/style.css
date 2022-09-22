@@ -209,6 +209,7 @@ input:checked + .slider:before {
 @media (max-width: 600px) {
   .generate-block {
     width: 90%;
+    height: 600px;
   }
 }
 
