@@ -211,6 +211,9 @@ input:checked + .slider:before {
     width: 90%;
     height: 600px;
   }
+  .generate-title {
+    font-size: 28px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
